@@ -32,8 +32,7 @@ Enemy.prototype.update = function(dt) {
     }
 
     //Handles collision with the Player
-    if(this.x > player.x && this.x < player.x + 5
-     && this.y === player.y)
+    if(this.x + 50 > player.x && this.x - 50 < player.x && this.y === player.y)
         player.reset();
 };
 
